@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📚 Student Learning Hub</h1>
+  <button onclick="toggleMode()">🌙 Toggle Mode</button>
+</header>
+
+<main>
+
+  <!-- Lessons -->
+  <section class="card">
+    <h2>📚 Lessons</h2>
+    <ul>
+      <li>Angles</li>
+      <li>Trigonometry</li>
+      <li>Quadratics</li>
+    </ul>
+  </section>
+
+  <!-- Quiz -->
+  <section class="card">
+    <h2>🧠 Quiz System</h2>
+
+    <!-- Progress Bar -->
+    <div id="progressBarContainer">
+      <div id="progressBar"></div>
+    </div>
+
+    <!-- Timer -->
+    <p id="timer"></p>
+
+    <!-- Question -->
+    <p id="questionText"></p>
+
+    <!-- Answers -->
+    <div id="answers"></div>
+
+    <!-- Result -->
+    <p id="quizResult"></p>
+    <p id="score"></p>
+  </section>
+
+  <!-- Leaderboard -->
+  <section class="card">
+    <h2>🏆 Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+  </section>
+
+  <!-- Math Solver -->
+  <section class="card">
+    <h2>🧮 Math Solver</h2>
+    <input type="text" id="mathInput" placeholder="Example: 5+3*2">
+    <button onclick="solveMath()">Solve</button>
+    <p id="mathResult"></p>
+  </section>
+
+  <!-- Ask Questions -->
+  <section class="card">
+    <h2>❓ Ask a Question</h2>
+    <input type="text" id="questionInput" placeholder="Type your question...">
+    <button onclick="addQuestion()">Submit</button>
+
+    <ul id="questionList"></ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Student Learning Hub</p>
+</footer>
+
+<!-- Sound Effects -->
+<audio id="correctSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+<audio id="wrongSound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

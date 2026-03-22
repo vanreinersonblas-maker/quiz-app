@@ -1,0 +1,57 @@
+/* Background (black + blue gradient) */
+body {
+  background: linear-gradient(135deg, #020617, #0f172a, #1e3a8a);
+  color: #e2e8f0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Cards */
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* General button style */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #38bdf8;
+  color: black;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+/* Button hover glow */
+button:hover {
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+/* Quiz answer buttons (stacked) */
+#answers button {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Input field */
+input {
+  padding: 8px;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Light mode */
+.light-mode {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.light-mode .card {
+  background: #e2e8f0;
+}
